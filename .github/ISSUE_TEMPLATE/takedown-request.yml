@@ -1,0 +1,64 @@
+name: Takedown request
+description: Ask for content you hold rights to be removed from Games Rebirth.
+title: "Takedown request: "
+labels: ["takedown"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reaching out. Confirmed requests are acted on promptly, without argument.
+
+        **This issue is public.** Do not include private details you do not want shown. For a private channel, use GitHub's [DMCA takedown process](https://docs.github.com/en/site-policy/content-removal-policies/dmca-takedown-policy) instead.
+  - type: input
+    id: rights-holder
+    attributes:
+      label: Rights holder
+      description: The company or person who owns the work.
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the rights holder
+      options:
+        - I am the rights holder
+        - I am authorized to act on behalf of the rights holder
+    validations:
+      required: true
+  - type: textarea
+    id: original-work
+    attributes:
+      label: Original work
+      description: The game, trademark, or asset you hold rights to.
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Content to remove
+      description: Links to the repositories, files, or pages concerned.
+      placeholder: https://github.com/gamesrebirth/...
+    validations:
+      required: true
+  - type: dropdown
+    id: action
+    attributes:
+      label: Requested action
+      options:
+        - Remove the whole repository
+        - Remove specific files or assets
+        - Rename the project or remove a trademark
+        - Other (explain below)
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details
+  - type: checkboxes
+    id: good-faith
+    attributes:
+      label: Statement
+      options:
+        - label: I believe in good faith that the content listed above is not authorized by the rights holder or the law.
+          required: true

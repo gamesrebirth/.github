@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Private DMCA takedown through GitHub
+    url: https://docs.github.com/en/site-policy/content-removal-policies/dmca-takedown-policy
+    about: Send a takedown notice to GitHub privately instead of opening a public issue.
+  - name: Copyright and trademark notice
+    url: https://github.com/gamesrebirth/.github/blob/main/COPYRIGHT-NOTICE.md
+    about: How Games Rebirth handles copyright, trademarks, and takedowns.
